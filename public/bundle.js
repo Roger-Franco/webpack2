@@ -42,15 +42,19 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(1)
-
-/***/ },
-/* 1 */
 /***/ function(module, exports) {
 
-	console.log('Sou carregado?');
+	class Pessoa {
+	  constructor(nome) {
+	    this.nome = nome;
+	  }
+	  toString() {
+	    return `Pessoa: ${this.nome}`;
+	  }
+	}
+
+	const pessoa = new Pessoa('Roger');
+	console.log(pessoa.toString());
 
 /***/ }
 /******/ ]);
